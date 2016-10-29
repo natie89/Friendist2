@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bubble_IV_inboxrowlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/speechbubble"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="12dp"
+        />
+    <LinearLayout
+        android:id="@+id/recipients_LL_inboxrowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bubble_IV_inboxrowlayout"
+        android:layout_marginTop="6dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from_TV_inboxRow"
+        android:textSize="15sp"
+        />
+        <TextView
+            android:id="@+id/sendinguser_TV_inboxrowlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/touser_TV_inboxrowlayout"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_TV_inboxRow"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/recievinguser_TV_inboxrowlayout"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/datetime_TV_inboxrowlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="datetime"
+        android:layout_below="@id/recipients_LL_inboxrowlayout"
+        android:layout_toRightOf="@id/bubble_IV_inboxrowlayout"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/themessege_TV_inboxrowlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THE MESSEGE"
+        android:textSize="22sp"
+        android:layout_toRightOf="@id/bubble_IV_inboxrowlayout"
+        android:layout_below="@id/datetime_TV_inboxrowlayout"/>
+
+</RelativeLayout>

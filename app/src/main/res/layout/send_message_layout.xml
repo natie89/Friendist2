@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:gravity="top"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:id="@+id/title_LL_messageFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/sendmessagetoText_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sendto_title_messageFragment"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/toUsername_TV_messageFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="20dp"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/cancelMessage_BTN_messageFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancelmessage"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:background="?android:selectableItemBackground"/>
+    <EditText
+        android:id="@+id/theMessage_ET_messageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="@string/writeMessage_hint_messageFragment"
+        android:layout_below="@id/title_LL_messageFragment"/>
+    <ImageButton
+        android:id="@+id/sendMessage_BTN_messageFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sendmessage"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_below="@id/theMessage_ET_messageFragment"
+        android:clickable="true"
+        android:background="?android:selectableItemBackground"/>
+
+
+
+
+</RelativeLayout>

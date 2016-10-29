@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/searchuserBTN_UserProfilePage"
+        android:title="@string/searchUser_menuItem"
+        />
+    <item
+        android:id="@+id/backtoprofileBTN_UserProfilePage"
+        android:title="@string/backtoprofile_menuItem"
+        android:icon="@drawable/editprofile"
+        />
+    <item
+        android:id="@+id/logoutBTN_UserProfilePage"
+        android:title="@string/logout_menuItem"
+        android:icon="@drawable/logout"
+        />
+
+</menu>

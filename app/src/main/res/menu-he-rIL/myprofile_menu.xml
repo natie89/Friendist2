@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/inboxBTN_myprofilepage"
+        android:title="@string/inbox_menuItem" />
+    <item
+        android:id="@+id/searchuserBTN_myprofilepage"
+        android:title="@string/searchUser_menuItem" />
+    <item
+        android:id="@+id/searchCategoryBTN_myprofilepage"
+        android:title="@string/categories" />
+    <item
+        android:id="@+id/editprofileBTN_myprofilepage"
+        android:icon="@drawable/editprofile"
+        android:title="@string/editProfile_menuItem" />
+    <item
+        android:id="@+id/logoutBTN_myprofilepage"
+        android:icon="@drawable/logout"
+        android:title="@string/logout_menuItem" />
+
+</menu>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/search_ET_SearchCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:inputType="text"
+        android:hint="@string/search_categories_SearchCat"
+        android:drawableRight="@drawable/searchicon"/>
+    <ImageButton
+        android:id="@+id/back_BTN_searchCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAlignBottom="true"
+        android:layout_gravity="right"
+        android:layout_weight="5"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/cancel"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/noCategory_TV_searchCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No results were found, would like to add the category to the list?"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/addorremove_LL_searchCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center">
+    <ImageButton
+        android:id="@+id/addCategory_IB_searchCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/addcat"/>
+        <ImageButton
+            android:id="@+id/clearSearch_IB_searchCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/removecat"/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/loadingAnimation_searchCategory"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:indeterminate="true"/>
+    <ListView
+        android:id="@+id/categories_LV_SearchCategory"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>

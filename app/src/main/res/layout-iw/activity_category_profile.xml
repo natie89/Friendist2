@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/categoryName_TV_categoryProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category name"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+    <ProgressBar
+        android:id="@+id/loadingAnimation_categoryProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"/>
+    <TextView
+        android:id="@+id/peopleWhoTakeInterest_TV_categoryProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/categoryName_TV_categoryProfile"
+        android:text="@string/people_who_take_interest_in_this_category"
+        android:textSize="18dp"
+        android:layout_marginTop="6dp"/>
+    <ImageButton
+        android:id="@+id/joinCategory_IB_categoryProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@id/peopleWhoTakeInterest_TV_categoryProfile"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/categoryaddself"
+        android:background="?android:selectableItemBackground"
+
+        />
+    <ImageButton
+        android:id="@+id/leaveCategory_IB_categoryProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/peopleWhoTakeInterest_TV_categoryProfile"
+        android:layout_marginLeft="8dp"
+        android:visibility="invisible"
+        android:src="@drawable/categoryremoveself"
+        android:background="?android:selectableItemBackground"
+
+        />
+    <TextView
+        android:id="@+id/joinCategory_TV_categoryProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/join_category"
+        android:layout_below="@id/peopleWhoTakeInterest_TV_categoryProfile"
+        android:visibility="invisible"
+        android:layout_toRightOf="@id/joinCategory_IB_categoryProfile"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/leaveCategory_TV_categoryProfile"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:text="@string/leave_category"
+        android:layout_below="@id/peopleWhoTakeInterest_TV_categoryProfile"
+        android:layout_toRightOf="@id/leaveCategory_IB_categoryProfile"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"/>
+
+    <ListView
+        android:id="@+id/usersRegisteredToCategory_LV_categoryProfile"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/joinCategory_IB_categoryProfile"/>
+
+</RelativeLayout>
